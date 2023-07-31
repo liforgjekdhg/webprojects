@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>document</title>
+    <style>
+       div{
+           width: 100px;
+           height:100px;
+           border-radius: 50%;
+           background-color:black;
+           animation-name: animate--div;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+           animation-delay: 0.5s;
+           animation-timing-function: ease-in;
+       }
+       @keyframes animate--div{
+         from{
+            background-color: rgb(192, 71, 140);
+            transform: translateY(500px);
+         }
+         100%{
+            background-color: rgb(221, 18, 240);
+            transform: translateZ(700px);
+         }
+         100%{
+            background-color: rgb(10, 244, 244);
+            transform: translate3d(500px);
+         }
+         100%{
+            background-color: rgb(87, 219, 30);
+            transform: translate3d(700px);
+         }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
